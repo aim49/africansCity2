@@ -98,6 +98,23 @@ $('.owl-carousel').owlCarousel({
 });
 
 
+// pagination actions
+$(document).ready(function(){
+    $('.next').click(function(){
+        $('.contentslider').find('.pagenumber.active').next().
+        addClass('active');
+        $('.contentslider').find('.pagenumber.active').next().
+        removeClass('active');
+    })
+
+    $('.prev').click(function(){
+        $('.contentslider').find('.pagenumber.active').prev().
+        addClass('active');
+        $('.contentslider').find('.pagenumber.active').prev().
+        removeClass('active');
+    })
+});
+
 
 
 
