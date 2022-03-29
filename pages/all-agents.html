@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfricansCity - Rent | Sale Property Online</title>
+    <!-- icons -->
+    <!--font-awesome-->
+	<link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../font/boxicons-master/css/boxicons.min.css">
+    <!-- style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="../assets/carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="../assets/carousel/owl.carousel.css">
+
+</head>
+<body>
+        <!--header start-->
+        <header class="header fixed-top bg-white">
+            <div class="b-container">
+                <div class="b-row v-center">
+                    <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="#"><img src="../img/logo/africancity.png" alt="logo" class="img-fluid" height="60px" width="100px"></a>
+                    </div>
+                    </div>
+        <!--            Menu start         -->
+                    <div class="header-item item-center">
+                    <div class="menu-overlay">
+
+                    </div>
+                        <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">
+                                &times;
+                            </div>
+                        </div>
+                            <ul class="menu-main mx-auto">
+                                <li><a href="#">Home</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#" >Rent <i class="fas fa-angle-down"></i> </a>
+                                    <!-- sub-menu sttart -->
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">Residential</a></li>
+                                            <li><a href="#">Apartment</a></li>
+                                            <li><a href="#">Cottage</a></li>
+                                        </ul>
+                                    </div>
+        <!--                            sub-menu end-->
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#" >Sale <i class="fas fa-angle-down"></i> </a>
+                                    <!-- sub-menu sttart -->
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">Residential</a></li>
+                                            <li><a href="#">Apartment</a></li>
+                                            <li><a href="#">Cottage</a></li>
+                                        </ul>
+                                    </div>
+        <!--                            sub-menu end-->
+                                </li>
+                                <li><a href="#">Agents</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#"  class="add-listing-link"><i class="fa fa-plus" aria-hidden="true"></i> Add Listing</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+        <!--            menu end          -->
+                    <div class="header-item item-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             My Account
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Favorite</a></li>
+                              <li><a class="dropdown-item" href="#">Add Property</a></li>
+                              <li><a class="dropdown-item" href="#">Property</a></li>
+                              <li><a class="dropdown-item" href="#">Settings</a></li>
+                              <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                          </li>
+        <!--               mobile menu trigger      -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- child hero -->
+    <div id="child-hero">
+        <div class="container">
+            <div class="child-hero-text">
+                <h1>
+                    All Agents
+                </h1>
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item text-white" href="#">Home</a>
+                    <span class="breadcrumb-item active">All Agents</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- search -->
+
+    <section id="grid-search">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select Category</option>
+                        <option value="1">Apartment</option>
+                        <option value="2">Cottage</option>
+                        <option value="3">Agriculture land</option>
+                      </select>
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>City</option>
+                        <option value="1">Harare</option>
+                        <option value="2">Bulawayo</option>
+                        <option value="3">Gweru</option>
+                      </select>
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Neighborhood</option>
+                        <option value="1">Mambo</option>
+                        <option value="2">Waterfall</option>
+                        <option value="3">Cowdray Park</option>
+                      </select>
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Bedrooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Min Plot Size" aria-label="default input example">
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Min Price" aria-label="default input example">
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Max Price" aria-label="default input example">
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <button class="btn orange w-100">Search</button>
+                </div>
+               </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- all agents -->
+    <!-- company  -->
+    <div id="agent-listing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="agent-card-listing">
+                        <div class="img-card">
+                            <div>
+                                <img src="../img/bg/5.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <span>
+                                <a href="#">Listings (34)</a>
+                            </span>
+                        </div>
+
+                        <div class="agent-details">
+                            <p class="name">
+                                Aim Makarudze
+                            </p>
+                            <a href="#">
+                                Aim Developments Inc
+                            </a>
+                            <div class="line-dash"></div>
+                            <div>
+                               <p>
+                                   <span>
+                                       Office:
+                                   </span>
+                                   <span>
+                                       560531
+                                   </span>
+                               </p>
+                               <p>
+                                <span>
+                                    Mobile:
+                                </span>
+                                <span>
+                                    0771909951
+                                </span>
+                            </p>
+                            <p class="mb-3">
+                                <span>
+                                    Email:
+                                </span>
+                                <span>
+                                    aimmak49@gmail.com
+                                </span>
+                            </p>
+                            </div>
+                            <div>
+                                <span>
+                                   <a href="#">Complete Profile</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="agent-card-listing">
+                        <div class="img-card">
+                            <div>
+                                <img src="../img/bg/5.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <span>
+                                <a href="#">Listings (34)</a>
+                            </span>
+                        </div>
+
+                        <div class="agent-details">
+                            <p class="name">
+                                Aim Makarudze
+                            </p>
+                            <a href="#">
+                                Aim Developments Inc
+                            </a>
+                            <div class="line-dash"></div>
+                            <div>
+                               <p>
+                                   <span>
+                                       Office:
+                                   </span>
+                                   <span>
+                                       560531
+                                   </span>
+                               </p>
+                               <p>
+                                <span>
+                                    Mobile:
+                                </span>
+                                <span>
+                                    0771909951
+                                </span>
+                            </p>
+                            <p class="mb-3">
+                                <span>
+                                    Email:
+                                </span>
+                                <span>
+                                    aimmak49@gmail.com
+                                </span>
+                            </p>
+                            </div>
+                            <div>
+                                <span>
+                                   <a href="#">Complete Profile</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="agent-card-listing">
+                        <div class="img-card">
+                            <div>
+                                <img src="../img/bg/5.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <span>
+                                <a href="#">Listings (34)</a>
+                            </span>
+                        </div>
+
+                        <div class="agent-details">
+                            <p class="name">
+                                Aim Makarudze
+                            </p>
+                            <a href="#">
+                                Aim Developments Inc
+                            </a>
+                            <div class="line-dash"></div>
+                            <div>
+                               <p>
+                                   <span>
+                                       Office:
+                                   </span>
+                                   <span>
+                                       560531
+                                   </span>
+                               </p>
+                               <p>
+                                <span>
+                                    Mobile:
+                                </span>
+                                <span>
+                                    0771909951
+                                </span>
+                            </p>
+                            <p class="mb-3">
+                                <span>
+                                    Email:
+                                </span>
+                                <span>
+                                    aimmak49@gmail.com
+                                </span>
+                            </p>
+                            </div>
+                            <div>
+                                <span>
+                                   <a href="#">Complete Profile</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+             <div class="mypagination ">
+            <ul>
+                <li class="myBtn prev"><span><i class="fas fa-angle-left"></i>Prev</span></li>
+                <li class="numb active">1</li>
+                <li class="numb">2</li>
+                <li class="numb">3</li>
+                <!-- disply dot when there is more than 3 pages -->
+                <li class="dots">...</li>
+                <li class="myBtn next"><span>Next<i class="fas fa-angle-right"></i></span></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- prpduct slider  -->
+    <div class="products" id="products">
+        <div class="container">
+
+
+            <div class="g-4 my-1 mx-auto productslider owl-carousel owl-theme">
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col product-box mx-auto pt-3 border-0">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="../img/logo/africancity.png" alt="listing-img"
+                            class="img-fluid d-block mx-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- foooter section -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-xl-4 col-12">
+                    <div class="footer-img">
+                        <img src="../img/logo/africancity.png" alt="footer img" class="img-fluid"  >
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-2 col-xl-2 col-12">
+                   <h5 class="footer-header">
+                       Navigation
+                   </h5>
+                   <div class="footer-links">
+                        <p>
+                            <a href="#"><small>Listings</small></a>
+                        </p>
+                        <p>
+                            <a href="#"><small>Agents</small></a>
+                        </p>
+                        <p>
+                            <a href="#"><small>About</small></a>
+                        </p>
+                        <p>
+                            <a href="#"><small>Contact Us</small></a>
+                        </p>
+                   </div>
+                </div>
+
+                <div class="col-md-12 col-lg-2 col-xl-2  col-12">
+                    <h5 class="footer-header">
+                        Categories
+                    </h5>
+                    <div class="footer-links">
+                         <p>
+                             <a href="#"><small>Residential</small></a>
+                         </p>
+                         <p>
+                             <a href="#"><small>Commercial</small></a>
+                         </p>
+                         <p>
+                             <a href="#"><small>Plots</small></a>
+                         </p>
+                         <p>
+                             <a href="#"><small>Town House</small></a>
+                         </p>
+                    </div>
+                 </div>
+
+                 <div class="col-md-12 col-lg-4 col-xl-4  col-12">
+                    <h5 class="footer-header">
+                        Contact
+                    </h5>
+                    <div class="footer-links">
+                        <p>
+                            <small>Harare, Jason Moyo and learnard Takawira, Barbara House 5th floor. Office Number 512</small>
+                         </p>
+                         <p>
+                            <small>info@globtorch.com</small>
+                         </p>
+                         <p>
+                            <small>(+263) 77 909 951</small>
+                         </p>
+                         <p>
+                            <ul>
+                                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                         </p>
+
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+               <div class="container">
+                   <small>
+                       Copyright &copy;2022 All rights reserved | <a href="#">Globtorch Online Education</a>
+                   </small>
+               </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- additional JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="../assets/carousel/owl.carousel.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/6fda675d39.js" crossorigin="anonymous"></script>
+    <!-- counter -->
+    <script src="../js/jquery.waypoints.js"></script>
+    <script src="../js/jquery.rcounterup.js"></script>
+    <script src="../js/active.js"></script>
+</body>
+</html>
