@@ -110,6 +110,19 @@ input:focus
     background-color: var(--primary__color);
 }
 
+.btn.accent{
+    border: 1px solid var(--accent-color);
+    border-radius: 0px;
+    color: var(--accent-color);
+    transition: 0.3s ease-in;
+    font-weight: 500;
+}
+
+.btn.accent:hover{
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
 .line-dash{
     height: 1px;
     width: 100%;
@@ -118,10 +131,10 @@ input:focus
 }
 /* navigation start */
 
-.b-container{
-    max-width: 1200px;
+/* .b-container{
+    max-width: 1400px;
     margin: auto;
-}
+} */
 
 .b-row{
     display: flex;
@@ -173,6 +186,13 @@ ul{
     margin-left: 10px;
     transition: color 0.3s ease;
     margin-left: 0!important;
+    font-weight: 600;
+}
+.header .item-right a i{
+    margin-right: .3rem;
+}
+.header .item-right a:hover{
+    color: var(--primary__color);
 }
 
 
@@ -218,12 +238,18 @@ ul{
     box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3);
     border-radius: 0;
     padding: 1rem 2rem;
+    transition: all .1s ease-in;
 }
 
 .header .item-right .dropdown-menu a{
     padding-top: .5rem;
     padding-bottom: .5rem;
     font-weight: 300!important;
+}
+
+.header .item-right .dropdown-menu a i{
+    padding-right: .3rem;
+    font-size: .9rem;
 }
 
 
@@ -285,7 +311,7 @@ ul{
 
 .header .menu > ul > li .sub-menu.mega-menu-column-4 .list-item .title{
     font-size: 16px;
-    color: #ea4636;
+    color: var(--primary__color);
     font-weight: 500;
     line-height: 1;
     padding: 10px 0;
@@ -305,7 +331,7 @@ ul{
 .header .menu > ul > li .sub-menu > ul > li > a:hover,
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a{
-    color: #ea4636;
+    color: var(--primary__color);
 }
 
 /*banner section*/
@@ -982,6 +1008,8 @@ ul{
     padding: 6rem 0 0 0;
 }
 
+
+
 .footer .footer-img img{
     max-width: 250px;
     margin-bottom: 1.5rem;
@@ -1015,6 +1043,10 @@ ul{
     margin-top: 4rem;
     background-color: #2d3436;
     padding: 1rem 0;
+}
+
+.remove-margin{
+    margin-top: 0!important;
 }
 .footer .footer-bottom small {
     color: #fff;
@@ -1116,6 +1148,12 @@ ul{
     align-items: flex-start;
     height: 40vh;
 }
+
+#child-hero .child-hero-text.admin{
+    align-items: center!important;
+}
+
+
 
 #child-hero .child-hero-text h1{
     color: #fff;
@@ -1395,7 +1433,13 @@ ul{
     font-weight: normal;
     font-size: .9rem;
 }
-
+#grid-listing .grid-listing-card .img-top span .close{
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    background-color: #ff0000;
+    font-size: .8rem;
+    color: #fff;
+}
 
 #grid-listing .grid-listing-card .grid-listing-detail{
     padding: 1rem;
@@ -1533,6 +1577,12 @@ ul{
 #grid-listing .sidebar-item .property-types div a div span{
     color: #fff;
     font-weight: 500;
+}
+
+#grid-listing .modal input,
+#grid-listing .modal textarea{
+    border-radius: 0;
+    box-shadow: none;
 }
 /* end grid post section */
 /*end post types */
@@ -2107,11 +2157,11 @@ ul{
 
 #shared-style .shared-box .essential p{
 	background-color: var(--accent-color);
-	padding: 1rem;
-	font-size: .9rem;
-	border-radius: 5px;
-	font-weight: 600;
-	color: #fff;
+    font-weight: 300;
+    font-size: .8rem;
+    padding: .3rem;
+    border-radius: 5px;
+    color: #fff;
 }
 
 #shared-style .shared-box h4{
@@ -2126,8 +2176,21 @@ ul{
 	box-shadow: none;
 	border-color: var(--primary__color);
 }
+#profile .profile-box input,
+#profile .profile-box  select,
+#shared-style .shared-box textarea,
+#shared-style .shared-box input,
+#shared-style .shared-box select
+{
+    border-radius: 0;
+    font-size: .9rem;
+}
 
-
+#profile .profile-box input::placeholder,
+#shared-style .shared-box textarea::placeholder,
+#shared-style .shared-box input::placeholder{
+    color: var(--dracula-black);
+}
 
 #shared-style .shared-box input[type="file"]{
     display: none;
@@ -2186,7 +2249,90 @@ ul{
 	border-radius: 5px;
 }
 
+#shared-style .shared-box .profile-mandatory{
+    background-color: var(--accent-color);
+    font-weight: 300;
+    font-size: .8rem;
+    padding: .3rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
 
 
 
 /*end: new-listing */
+
+
+/*start; dashboard option */
+#admin-option{
+    padding: 4rem 0;
+}
+
+#admin-option .card{
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 0;
+    transition: all .3s ease-in;
+    margin-bottom: 1.5rem;
+}
+
+#admin-option .card .icon i{
+    font-size: 3rem;
+    color: var(--dracula-black);
+}
+#admin-option .card  .card-body .card-title{
+    font-weight: 600;
+    font-family: var(--lora__font);
+    color: var(--dracula-black);
+}
+#admin-option .card  .card-body p{
+    font-weight: 300;
+    color: var(--accent-color);
+}
+
+#admin-option .card:hover{
+    background-color: var(--accent-color);
+}
+#admin-option .card:hover .icon i,
+#admin-option .card:hover .card-body .card-title,
+#admin-option .card:hover .card-body p{
+    color: #fff;
+}
+/*end ; dashboard option */
+
+
+/* start:accordion */
+#accordion{
+    padding: 4rem 0;
+	background-color: rgba(128, 128, 128, 0.212);
+}
+.accordion-button:not(.collapsed){
+    color: var(--primary__color)!important;
+}
+/* end:accordion */
+
+/* start: favorites pages */
+
+#favorite{
+    padding: 4rem 0;
+}
+
+/* end: favorites pages */
+
+
+/* view-listing */
+#my-listing{
+    padding: 4rem 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter input{
+    box-shadow: none!important;
+    border-radius: 0;
+}
+div.dataTables_wrapper div.dataTables_filter input:focus{
+    border: 1px solid var(--primary__color);
+}
+
+
+/* end: view listing  */
