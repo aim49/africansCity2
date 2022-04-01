@@ -869,7 +869,7 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 3em 0;
+    padding: 2em 0;
 }
 
 .counterup .counter-box .counter-icon i{
@@ -2306,6 +2306,134 @@ div.dataTables_wrapper div.dataTables_filter input:focus{
 /* end: view listing  */
 
 
+/* pricing */
+
+#pricing{
+    padding: 4rem 0 ;
+}
+
+
+#pricing .pricing-card{
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-top: 2px solid var(--primary__color);
+    border-bottom: 2px solid var(--primary__color);
+    margin-bottom: 1.5rem;
+}
+
+#pricing .pricing-card .package-features p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--noto__font);
+    color: var(--dracula-black);
+    font-weight: 300;
+}
+#pricing .pricing-card .icon h3{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+#pricing .pricing-card .main-header{
+    position: relative;
+}
+
+#pricing .pricing-card .main-header h5{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    color: var(--primary__color);
+    background: #fff;
+    padding: .5rem .5rem!important;
+    z-index: 2;
+    width: fit-content;
+}
+
+#pricing .pricing-card .main-header span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: var(--primary__color);
+    height: 2px;
+    width: 100%;
+    z-index: -1;
+}
+
+#pricing .pricing-card .package-features{
+    padding: 0 .5rem;
+}
+/* end pricing */
+
+/* start: package */
+
+#package{
+    padding: 4rem 0;
+}
+#package .package-card{
+    padding: 2.5rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-top: 2px solid var(--primary__color);
+    border-bottom: 2px solid var(--primary__color);
+    margin-bottom: 1.5rem;
+}
+
+#package .package-card .main-header h4{
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+#package .package-card input:focus{
+    box-shadow: none;
+    border-color: var(--primary__color);
+}
+#package .package-card input{
+    border-radius: 0;
+    font-size: .9rem;
+}
+
+#package .package-card label{
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+#package .package-card .payment-options{
+    margin-bottom: 1rem;
+}
+
+#package .package-card .payment-options a{
+    color: var(--accent-color);
+    padding: .5rem 1rem;
+    background-color: rgba(128, 128, 128, 0.075);
+    width: 100%;
+    text-align: left;
+    border: 1px solid var(--primary__color);
+    border-radius: 0;
+}
+
+
+#package .package-card .payment-options a.active{
+    background-color: var(--primary__color);
+}
+#package .package-card .payment-options a.active span{
+    color: #fff!important;
+}
+
+#package .package-card .payment-options a h5 span:nth-child(1){
+    color: var(--accent-color);
+}
+#package .package-card .payment-options a h5 span:nth-child(2){
+    color: red;
+}
+/* emd: package */
 
 /* responsive breakpoints */
 
