@@ -131,58 +131,104 @@
                             Payment Options
                         </h4>
                     </div>
-                    <div class="payment-options">
-                        <div class="row">
-                            <div class="col-6">
-                              <a href="#" class="active btn">
-                                <h5 class="m-0 p-0">
-                                    <span>Eco</span><span>Cash</span>
-                                </h5>
-                              </a>
+                    <ul class="nav nav-tabs payment-options mb-4" id="myTab" role="tablist">
+                        <li class="nav-item col-6" role="presentation">
+                          <button class="nav-link active" id="eco-tab" data-bs-toggle="tab" data-bs-target="#eco" type="button" role="tab" aria-controls="eco" aria-selected="true">EcoCash</button>
+                        </li>
+                        <li class="nav-item col-6" role="presentation">
+                          <button class="nav-link" id="paynow-tab" data-bs-toggle="tab" data-bs-target="#paynow" type="button" role="tab" aria-controls="paynow" aria-selected="false">PayNow</button>
+                        </li>
+                      </ul>
+
+                      <!-- body -->
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="eco" role="tabpanel" aria-labelledby="eco-tab">
+                            <div class="form">
+                                <p><small>*Note all Ecocash payments are done in RTGS</small></p>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Currency</label>
+                                                <input type="text" class="form-control " id="" disabled placeholder="ZWL">
+                                              </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Price</label>
+                                                <input type="text" class="form-control " id="" disabled placeholder="50">
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Pricing</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">3</option>
+                                                    <option value="3">6</option>
+                                                    <option value="4">12</option>
+                                                  </select>
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">EcoCash Mobile Number</label>
+                                                <input type="number" class="form-control " id="" placeholder="">
+                                              </div>
+                                        </div>
+                                        <div class="link">
+                                            <button class="btn orange w-100">Proceed</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="col-6">
-                               <a href="#" class="btn">
-                                <h5 class="m-0 p-0">
-                                    PayNow
-                                   </h5>
-                               </a>
-                             </div>
                         </div>
-                    </div>
-                    <div class="form">
-                        <p><small>*Note all Ecocash payments are done in RTGS</small></p>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">Currency</label>
-                                        <input type="text" class="form-control " id="" disabled placeholder="ZWL">
-                                      </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">Price</label>
-                                        <input type="text" class="form-control " id="" disabled placeholder="50">
-                                      </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">Number of Months</label>
-                                        <input type="number" class="form-control " id="" placeholder="">
-                                      </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <label for="" class="form-label">EcoCash Mobile Number</label>
-                                        <input type="number" class="form-control " id="" placeholder="">
-                                      </div>
-                                </div>
-                                <div class="link">
-                                    <button class="btn orange w-100">Proceed</button>
-                                </div>
+                        <div class="tab-pane fade" id="paynow" role="tabpanel" aria-labelledby="paynow-tab">
+                            <div class="form">
+                                <p><small>*Pay with Paynow - USD or RTGS</small></p>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Currency</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>ZWL</option>
+                                                    <option value="1">USD</option>
+                                                  </select>
+                                              </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Price</label>
+                                                <input type="text" class="form-control " id="" disabled placeholder="50">
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Number of Months</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">3</option>
+                                                    <option value="3">6</option>
+                                                    <option value="4">12</option>
+                                                  </select>
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="noted">
+                                                <small>Please select Visa/Mastercard on the paynow platform. Selecting any other option would make your payment invalid</small>
+                                            </div>
+                                        </div>
+                                        <div class="link mt-2">
+                                            <button class="btn orange w-100">Proceed</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
