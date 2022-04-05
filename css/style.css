@@ -585,7 +585,7 @@ ul{
 /* navigation end */
 /* hero section */
 .landing.h-hero{
-    background-image:linear-gradient(rgba(51, 143, 255, 0.274),rgba(51, 143, 255, 0.219)), url("/img/bg/bed-bedroom-clean-775219.jpg");
+    background-image:linear-gradient(rgba(51, 143, 255, 0.452),#ff8c0059), url("/img/bg/5.jpg");
 }
 .h-hero{
     position: relative;
@@ -633,6 +633,18 @@ ul{
     font-weight: 300;
     color: white;
     width: 120px;
+}
+
+.h-hero .hero-text div a.orange:hover{
+    background: #fff;
+    color: var(--primary__color);
+    border: none;
+}
+
+.h-hero .hero-text div a.btn.accent:hover{
+    background: #fff;
+    color: var(--accent-color);
+    border: none;
 }
 
 .h-hero .hero-text div a.btn.accent{
@@ -866,7 +878,7 @@ ul{
 
 /* counter */
 .counterup{
-    background-image: linear-gradient(rgba(51, 143, 255, 0.548),rgba(51, 143, 255, 0.548)), url("/img/bg/2.jpg");
+    background-image: linear-gradient(rgba(51, 143, 255, 0.596),#ff8c007a), url("/img/bg/2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2609,6 +2621,7 @@ div.dataTables_wrapper div.dataTables_filter input:focus{
 
 
 }
+
 
 
 /* start about page */
