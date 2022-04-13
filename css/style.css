@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&family=Noto+Serif:wght@700&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&family=Noto+Serif:wght@700&family=Poppins:wght@300;400;500&display=swap');
 
 :root{
     /* colors */
@@ -617,6 +617,7 @@ ul{
 .h-hero h2 span{
     color: var(--primary__color);
     font-family: var(--noto__font);
+    font-weight: 700;
 }
 
 .h-hero p{
@@ -624,6 +625,11 @@ ul{
     font-weight: 500;
     color: #fff;
     font-size: 1.1em;
+}
+
+.h-hero p span{
+    color: var(--primary__color);
+    font-size: inherit;
 }
 
 .h-hero .hero-text div a.orange{
@@ -737,6 +743,8 @@ ul{
     color: var(--gray__color);
     line-height: 1.7;
 }
+
+
 
 /* listing for sale and rent */
 .featured .listing{
@@ -1773,6 +1781,12 @@ ul{
     background-color: rgba(128, 128, 128, 0.075);
     border-bottom: 2px solid var(--primary__color);
 }
+.listed-by .inquire{
+    font-family: var(--Mont__serat);
+}
+.top-details p.desription{
+    line-height: 1.8!important;
+}
 
 .top-details .Mortgage input:focus,
 #single-listing .listed-by .form-edit:focus{
@@ -2270,8 +2284,8 @@ ul{
     border-radius: 0;
     transition: all .3s ease-in;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--primary__color);
-    border-top: 2px solid var(--primary__color);
+    border-bottom: 2px solid var(--accent-color);
+    border-top: 2px solid var(--accent-color);
 }
 
 #admin-option .card .icon i{
@@ -2285,11 +2299,12 @@ ul{
 }
 #admin-option .card  .card-body p{
     font-weight: 300;
-    color: var(--accent-color);
+    color: var(--primary__color);
+    font-weight: 500;
 }
 
 #admin-option .card:hover{
-    background-color: var(--accent-color);
+    background-color: var(--primary__color);
 }
 #admin-option .card:hover .icon i,
 #admin-option .card:hover .card-body .card-title,
@@ -2468,7 +2483,11 @@ div.dataTables_wrapper div.dataTables_filter input:focus{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.096);
+    /* background-color: rgba(128, 128, 128, 0.096); */
+    background-image: linear-gradient( rgba(51, 143, 255, 0.329), rgba(255, 140, 0, 0.425)), url("/img/bg-6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 

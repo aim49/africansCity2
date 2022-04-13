@@ -25,7 +25,7 @@
                 <div class="b-row v-center">
                     <div class="header-item item-left">
                     <div class="logo">
-                        <a href="#"><img src="img/logo/africancity.png" alt="logo" class="img-fluid" height="60px" width="100px"></a>
+                        <a href="#"><img src="../img/logo/africancity.png" alt="logo" class="img-fluid" height="60px" width="100px"></a>
                     </div>
                     </div>
         <!--            Menu start         -->
@@ -123,10 +123,19 @@
                <div class="col-md-3 col-sm-6 col-12">
                 <div class="mb-3">
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Select Category</option>
+                        <option selected>Type</option>
+                        <option value="1">For Rent</option>
+                        <option value="2">Sale</option>
+                      </select>
+                </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Catergory</option>
                         <option value="1">Apartment</option>
-                        <option value="2">Cottage</option>
-                        <option value="3">Agriculture land</option>
+                        <option value="2">Townhouse</option>
+                        <option value="3">Agricultural Farmland</option>
                       </select>
                 </div>
                </div>
@@ -169,11 +178,6 @@
                </div>
                <div class="col-md-3 col-sm-6 col-12">
                 <div class="mb-3">
-                    <input class="form-control" type="text" placeholder="Min Price" aria-label="default input example">
-                </div>
-               </div>
-               <div class="col-md-3 col-sm-6 col-12">
-                <div class="mb-3">
                     <input class="form-control" type="text" placeholder="Max Price" aria-label="default input example">
                 </div>
                </div>
@@ -192,7 +196,7 @@
     <div class="container">
         <div class="top-listing-d">
             <p>
-                    <small> 1 - 200 listed Properties</small>
+                    <small> 1 - 10 of 200 listed Properties</small>
             </p>
             <div class="dropdown">
                 <button class="btn orange dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
