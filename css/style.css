@@ -681,10 +681,10 @@ ul{
     position: absolute;
     padding: 6px;
     line-height: 1em;
-    top: 2.4px;
-    right: 5px;
+    top: 2.1px;
+    right: 3px;
     background: #ffa333;
-    border-radius: 30px;
+    border-radius: 100%;
 }
 .h-hero form button:hover{
     background-color: var(--accent-color);
@@ -2284,8 +2284,8 @@ ul{
     border-radius: 0;
     transition: all .3s ease-in;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--accent-color);
-    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--dracula-black);
+    border-top: 2px solid var(--dracula-black);
 }
 
 #admin-option .card .icon i{
@@ -2298,9 +2298,9 @@ ul{
     color: var(--dracula-black);
 }
 #admin-option .card  .card-body p{
-    font-weight: 300;
-    color: var(--primary__color);
     font-weight: 500;
+    color: var(--primary__color);
+    font-size: .9rem;
 }
 
 #admin-option .card:hover{
