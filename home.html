@@ -49,25 +49,25 @@
                         <ul class="menu-main mx-auto">
                             <li><a href="index.html">Home</a></li>
                             <li class="menu-item-has-children">
-                                <a href="pages/listings.html" >Rent <i class="fas fa-angle-down"></i> </a>
+                                <a  >Rent <i class="fas fa-angle-down"></i> </a>
                                 <!-- sub-menu sttart -->
                                 <div class="sub-menu single-column-menu">
                                     <ul>
-                                        <li><a href="#">Residential</a></li>
-                                        <li><a href="#">Apartment</a></li>
-                                        <li><a href="#">Cottage</a></li>
+                                        <li><a href="pages/listings.html">Residential</a></li>
+                                        <li><a href="pages/listings.html">Apartment</a></li>
+                                        <li><a href="pages/listings.html">Cottage</a></li>
                                     </ul>
                                 </div>
     <!--                            sub-menu end-->
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="pages/listings.html" >Sale <i class="fas fa-angle-down"></i> </a>
+                                <a>Sale <i class="fas fa-angle-down"></i> </a>
                                 <!-- sub-menu sttart -->
                                 <div class="sub-menu single-column-menu">
                                     <ul>
-                                        <li><a href="#">Residential</a></li>
-                                        <li><a href="#">Apartment</a></li>
-                                        <li><a href="#">Cottage</a></li>
+                                        <li><a href="pages/listings.html">Residential</a></li>
+                                        <li><a href="pages/listings.html">Apartment</a></li>
+                                        <li><a href="pages/listings.html">Cottage</a></li>
                                     </ul>
                                 </div>
     <!--                            sub-menu end-->
@@ -75,7 +75,7 @@
                             <li><a href="pages/all-agents.html">Agents</a></li>
                             <li><a href="pages/about.html">About</a></li>
                             <li><a href="pages/pricing.html">Pricing</a></li>
-                            <li><a href="pages/contact.html" >Contact</a></li>
+                            <li><a href="pages/add-listing.html"  class="add-listing-link"><i class="fa fa-plus" aria-hidden="true"></i> Add Listing</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -86,8 +86,13 @@
                             <i class="fa-solid fa-people-roof"></i>Account
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <li><a class="dropdown-item" href="pages/dashboard.html"><i class="fa-solid fa-lightbulb"></i>Sign Up</a></li>
-                          <li><a class="dropdown-item" href="pages/profile.html"><i class="fa fa-user"></i>Log In</a></li>
+                          <li><a class="dropdown-item" href="pages/dashboard.html"><i class="fa-solid fa-lightbulb"></i>Dashboard</a></li>
+                          <li><a class="dropdown-item" href="pages/profile.html"><i class="fa fa-user"></i>Profile</a></li>
+                          <li><a class="dropdown-item" href="pages/favourites.html"><i class="fa-solid fa-heart"></i>Favorite</a></li>
+                          <li><a class="dropdown-item" href="pages/add-listing.html"><i class="fa-solid fa-house-chimney-medical"></i>Add Property</a></li>
+                          <li><a class="dropdown-item" href="pages/view-listings.html"><i class="fa-solid fa-house-laptop"></i>Property</a></li>
+                          <li><a class="dropdown-item" href="pages/"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a></li>
                         </ul>
                       </li>
     <!--               mobile menu trigger      -->
@@ -100,28 +105,95 @@
     </header>
 <!--header end-->
     <!-- hero section -->
-    <div class="h-hero landing" id="h-hero">
+    <div class="h-hero" id="h-hero">
        <div class="container">
            <div class="hero-text">
-            <p>
-                Welcome to Africans<span>City</span>
-           </p>
             <h2>
-                <span>Upload Your Properties?</span> Create an Account today.
+                <span>Be at home,</span> Find where you belong?
             </h2>
             <p>
                  Buy | Rent | Sale
             </p>
             <div>
-                <a href="#" class="btn orange">SignUp</a>
-                <a href="#" class="btn accent">Register</a>
+                <form action="" class="forms">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" name="" id="" placeholder="Search For Property | Enter Keywords">
+                      <button type="button" class="btn"><i class='bx bx-search'></i></button>
+                    </div>
+                </form>
             </div>
+            <a class="btn search" href="pages/listings.html"><i class='bx bx-plus'></i> Advanced Search</a>
            </div>
        </div>
     </div>
 
+    <!-- how to work -->
+    <div class="howitwork" id="howitwork">
+
+        <div class="container">
+            <div class="heading text-center">
+                <h2>
+                    How it Works
+                </h2>
+                <p>
+                    Instructions to help you start your journey
+                </p>
+            </div>
+
+
+            <div class="row">
+
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="work-box">
+                        <div class="icon-box">
+                            <i class='bx bx-building-house'></i>
+                        </div>
+                        <h5>
+                            Upload Listing
+                        </h5>
+                        <p>
+                            Create a listing for a piece of property at your own
+                            convenience with us and enjoy quality advertising.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="work-box">
+                        <div class="icon-box">
+                            <i class='bx bx-show' ></i>
+                        </div>
+                        <h5>
+                            View Listings
+                        </h5>
+                        <p>
+                           Scour through listings to find the right property
+                           for you either for rent or sale online with AfricansCity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="work-box">
+                        <div class="icon-box">
+                            <i class='bx bx-chat'></i>
+                        </div>
+                        <h5>
+                            Contact Agent
+                        </h5>
+                        <p>
+                            Check our list of options to contact the agents
+                             that own a piece of property that you desire to purchase.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- featured For Sale -->
-    <div class="featured mt-5" id="featured">
+    <div class="featured" id="featured">
 
         <div class="container">
 
@@ -356,7 +428,7 @@
     </div>
 
     <!-- Featured for rent -->
-    <div class="featured pb-5" id="featured">
+    <div class="featured" id="featured">
 
         <div class="container">
 
@@ -590,8 +662,75 @@
 
     </div>
 
+    <!-- property qoute -->
+    <div class="property-quote" id="property-qoute">
+        <div class="container-fluid p-0 m-0">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="q-box">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12">
+                     <div class="q-text">
+                         <h2>
+                             Property <span>Request</span>
+                         </h2>
+                         <p>
+                             Create a personalized query for a piece of
+                             property. You would receive updates if any
+                             matching properties are found through your
+                              accounts.
+                         </p>
+                         <div class="request-btn">
+                             <a href="#" class="btn orange">Create Request</a>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonials -->
+    <div class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>
+                    Testimonials
+                </h2>
+                <p>
+                   What people say about our work.
+                </p>
+            </div>
+
+
+            <div class="testimonial-content  text-center">
+                <div class="testimonial-icon">
+                    <div class="icon-container">
+                        <i class='bx bxs-message-alt' ></i>
+                    </div>
+
+                    <div class="testimonial-quote">
+                        <p>
+                            <span><i class='bx bxs-quote-alt-left'></i></span>
+                            You guys deliver quality service all the time which
+                            makes life easy and allows gives customers the best experience.
+                              <span><i class='bx bxs-quote-alt-right'></i></span>
+                        </p>
+                        <span class="quote-update">
+                            Miss Nyoni
+                        </span>
+                        <br>
+                        <span class="qoute-job">
+                           Customer
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- counter -->
-    <div class="counterup text-center mt-5">
+    <div class="counterup text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 my-3">
@@ -677,13 +816,11 @@
                             Become A <span>Real Estate</span> Agent
                         </h2>
                         <p>
-                            Create a personalized query for a piece of
-                            property. You would receive updates if any
-                            matching properties are found through your
-                             accounts.
+                            Attract people searching for property as an agent as we offer a plethora
+                            of packages to help you list properties online at affordable pricing.
                         </p>
                         <div class="request-btn">
-                            <a href="#" class="btn orange">Register Now</a>
+                            <a href="#" class="btn orange">Add Properties</a>
                         </div>
                     </div>
                 </div>
@@ -905,6 +1042,13 @@
                         <p>
                             <a href="#"><small>Contact Us</small></a>
                         </p>
+                        <p>
+                            <a href="#"><small>Terms and Conditions</small></a>
+                        </p>
+                        <p>
+                            <a href="#"><small>Add Listing</small></a>
+                        </p>
+
                    </div>
                 </div>
 
@@ -923,8 +1067,14 @@
                              <a href="#"><small>Plots</small></a>
                          </p>
                          <p>
-                             <a href="#"><small>Town House</small></a>
+                             <a href="#"><small>TownHouse</small></a>
                          </p>
+                         <p>
+                            <a href="#"><small>Agriculture and FarmLand</small></a>
+                        </p>
+                        <p>
+                            <a href="#"><small>Cottage</small></a>
+                        </p>
                     </div>
                  </div>
 
@@ -934,13 +1084,17 @@
                     </h5>
                     <div class="footer-links">
                         <p>
-                            <small>Harare, Jason Moyo and learnard Takawira, Barbara House 5th floor. Office Number 512</small>
+                            <small>saint Barbara house 6th floor
+                                Harare, Zimbabwe</small>
                          </p>
                          <p>
-                            <small>info@globtorch.com</small>
+                            <small><a href="#">info@africanscity.com</a></small>
                          </p>
                          <p>
-                            <small>(+263) 77 909 951</small>
+                            <small><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +263 242 761 220</a></small>
+                         </p>
+                         <p>
+                            <small><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> +263 782 476 323</a></small>
                          </p>
                          <p>
                             <ul>
@@ -958,7 +1112,7 @@
         <div class="footer-bottom text-center">
                <div class="container">
                    <small>
-                       Copyright &copy;2022 All rights reserved | <a href="#">Globtorch Online Education</a>
+                       Copyright &copy;2022 All rights reserved | <a href="#">Africanscity</a>
                    </small>
                </div>
         </div>
